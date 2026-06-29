@@ -167,7 +167,7 @@ function tick(ts){
 function doSpeak(){
   if(!window.speechSynthesis)return;
   window.speechSynthesis.cancel();
-  var u=new SpeechSynthesisUtterance("Meet BOSS. The AI that builds things for you. Tell it what you want. It writes code, deploys it live, and learns from every task. Your own AI director, working 24 hours a day. Try BOSS free at get boss A I dot io.");
+  var u=new SpeechSynthesisUtterance("Meet BOSS. The AI that builds things for you. Tell it what you want. It writes code, deploys live, and learns every day. Try BOSS free at get boss A I dot io.");
   u.rate=0.9;u.pitch=1.1;u.volume=1.0;
   var vv=window.speechSynthesis.getVoices();
   var pick=vv.find(function(v){return /google|natural|premium|enhanced/i.test(v.name)&&/en/i.test(v.lang)})
